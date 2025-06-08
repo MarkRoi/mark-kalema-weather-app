@@ -13,7 +13,7 @@ function App() {
     try {
       const response = await axios.get("http://localhost:8000/weather", {
         headers: {
-          Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZW1vX3VzZXIiLCJleHAiOjE3NDkzODc5ODJ9.swPa9rkF1VPIGvX9S8XLBQ3WCSBiylvAworxkZHnZGQ", // Replace with demo token
+          Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZW1vX3VzZXIiLCJleHAiOjE3NDkzOTQxMjl9.a3wtCy93ZWAWlMN-9Ri8FNFc5Kfgo-wVCPO2h0N6Ygk", // Replace with demo token
         },
       });
       setWeatherData(response.data);
