@@ -39,30 +39,50 @@ This project is a **Software Engineer Intern Task** submission – a Weather App
 
 ### 2️⃣ Setup
 
-# Clone the repo
-git clone https://github.com/MarkRoi/mark-kalema-weather-app.git
-cd mark-kalema-weather-app
+- **Clone the repo:**
+- git clone --branch master https://github.com/MarkRoi/mark-kalema-weather-app.git
+- cd mark-kalema-weather-app
 
-# Generate or create .env file at the root of the project
-# Set DB_URL and SECRET_KEY in .env
+- Generate or create .env file at the root of the project
+- Set DB_URL and SECRET_KEY in .env
 
-# Start the app
-docker compose up --build
+- **Start the app**
+- docker compose up --build
 
+---
+
+### 3️⃣ Regenerate Demo Token ((Optional))
+
+✅ Ensure generate_token.py exists (create it if missing using the earlier script)
+✅ Run: cd D:\Programs\WEATHER-APP >> python generate_token.py
    
-## 🌐 Access
+---
+
+## Testing Instructions
+- **Run Pytest for Backend ETL**:
+  - pytest # From project root
+# OR
+  - cd backend
+  - pytest tests/
+  
+---
+
+### 🌐 Access
 
 - **Backend API**: [http://localhost:8000](http://localhost:8000)  
 - **Frontend UI**: [http://localhost:5173](http://localhost:5173)  
 - **Trigger ETL**:  http POST [http://localhost:8000/fetch-weather](http://localhost:8000/fetch-weather)
 
+---
 
-## 🔑 Demo Token or Test Credentials
+### 🔑 Demo Token or Test Credentials
 
 - **Demo Token**:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZW1vX3VzZXIifQ.o88Jdd-_76Gs2s3wvjLDORBbjpBdS7pPmLl2UJbAhbA (replace with a freshly generated token using the script in the repo; expires 30 minutes from generation)
 Usage: Include in Authorization header as Bearer <token> for /weather endpoint access.
 
-## 📌 What I'd Do Next with More Time
+---
+
+### 📌 What I'd Do Next with More Time
 
 ✅ Add pagination to the /weather endpoint
 ✅ Implement a CI pipeline with GitHub Actions for testing and deployment
