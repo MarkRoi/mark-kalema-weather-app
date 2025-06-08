@@ -43,7 +43,7 @@ This project is a **Software Engineer Intern Task** submission – a Weather App
 - git clone --branch master https://github.com/MarkRoi/mark-kalema-weather-app.git
 - cd mark-kalema-weather-app
 
-- Generate or create .env file at the root of the project
+- copy .env.example .env
 - Set DB_URL and SECRET_KEY in .env
 
 - **Start the app**
@@ -64,7 +64,7 @@ This project is a **Software Engineer Intern Task** submission – a Weather App
 # OR
   - cd backend
   - pytest tests/
-  
+
 ---
 
 ### 🌐 Access
